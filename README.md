@@ -25,5 +25,5 @@
 
 * Антон [@idaspin](https://github.com/idaspin) - работа с API, утилиты  и ... др.
 * Булат [@jerdys](https://github.com/jerdys) - разработка BooksList и BooksEditor активити.
-* Дамир[](#) - реализация функционала мобильного диктора (RecorderActivity).
-* Рузалин[](#) - создание финансового менеджера (BudgetActivity).
+* Дамир [@mozilovich](https://github.com/mozilovich) - реализация функционала мобильного диктора (RecorderActivity).
+* Рузалин [@hajruz](https://github.com/hajruz) - создание финансового менеджера (BudgetActivity).
