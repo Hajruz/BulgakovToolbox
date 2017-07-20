@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="container_layout" type="id" />
+
+    <item name="nav_books" type="id" />
+    <item name="nav_recorder" type="id" />
+    <item name="nav_budget" type="id" />
+    <item name="nav_download" type="id"/>
+    <item name="nav_remove" type="id"/>
+
+    <item name="base_toolbar" type="id" />
+    <item name="base_container" type="id" />
+    <item name="base_bottom_menu" type="id" />
+    <item name="base_accent_button" type="id" />
+    <item name="base_fab" type="id"/>
+    <item name="base_swipe_refresh_layout" type="id"/>
+
+    <item name="splash_image" type="id"/>
+    <item name="splash_text" type="id"/>
+
+    <item name="recorder_status" type="id"/>
+    <item name="recorder_editor" type="id"/>
+    <item name="recorder_dialog_edittext" type="id"/>
+
+    <item name="budget_count" type="id"/>
+    <item name="budget_editor" type="id"/>
+    <item name="budget_button_plus" type="id"/>
+    <item name="budget_button_minus" type="id"/>
+    <item name="budget_emptyview" type="id"/>
+    <item name="budget_recycler" type="id"/>
+    <item name="budget_loadmore" type="id"/>
+    <item name="budget_item_date" type="id"/>
+    <item name="budget_item_cost" type="id"/>
+    <item name="budget_item_title" type="id"/>
+    <item name="budget_item_message" type="id"/>
+
+    <item name="library_recycler" type="id"/>
+    <item name="library_emptyview" type="id"/>
+    <item name="library_loadmore" type="id"/>
+    <item name="library_poster" type="id"/>
+    <item name="library_title" type="id"/>
+    <item name="library_message" type="id"/>
+    <item name="library_options" type="id"/>
+
+    <item name="chooser_text" type="id"/>
+    <item name="chooser_description" type="id"/>
+    <item name="chooser_title" type="id"/>
+    <item name="chooser_poster" type="id"/>
+    <item name="chooser_button" type="id"/>
+</resources>

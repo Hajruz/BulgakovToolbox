@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.idaspin.helperforbulgakov.activities.budget.BudgetActivity"
+    android:id="@id/container_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="@string/budget_title"/>
+
+        <TextView
+            android:id="@id/budget_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/colorLightBlack"/>
+
+        <EditText
+            android:id="@id/budget_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:hint="@string/budget_edit_hint"
+            android:inputType="numberDecimal"
+            android:background="@color/colorTransparent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@id/budget_button_plus"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="@color/colorTransparent"
+                android:cropToPadding="false"
+                android:src="@mipmap/ic_plus_budget"
+                android:contentDescription="@string/budget_button_plus"/>
+
+            <ImageButton
+                android:id="@id/budget_button_minus"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:background="@color/colorTransparent"
+                android:src="@mipmap/ic_minus_budget"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:contentDescription="@string/budget_button_minus"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="@string/budget_title_notes"/>
+
+        <ru.idaspin.helperforbulgakov.widgets.EmptyRecyclerView
+            android:id="@id/budget_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@id/budget_emptyview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/colorLightBlack"
+            android:text="@string/budget_emptyview"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@id/budget_loadmore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:background="@color/colorWhite"
+            android:padding="15dp"
+            android:text="@string/budget_loadmore"/>
+
+    </LinearLayout>
+
+</LinearLayout>

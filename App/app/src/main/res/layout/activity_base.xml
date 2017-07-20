@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities_old.menu.BaseMenuActivity">
+
+   <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@id/base_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:titleTextColor="@color/colorWhite"
+            app:subtitleTextColor="@color/colorWhite"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@id/base_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@id/base_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </ScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@id/base_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:menu="@menu/bottom_navigation_menu"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@id/base_fab"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:visibility="gone"
+        android:layout_marginBottom="?actionBarSize"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

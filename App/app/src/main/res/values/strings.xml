@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Bulgakov Toolbox</string>
+
+    <string name="nav_books">Книги</string>
+    <string name="nav_recorder">Запись</string>
+    <string name="nav_budget">Бюджет</string>
+    <string name="nav_download">Загрузить</string>
+    <string name="nav_remove">Удалить</string>
+
+    <string name="message_back">Нажмите ещё раз для выхода</string>
+    <string name="message_loading">Обработка</string>
+
+    <string name="title_books">Библиотека</string>
+    <string name="title_budget">Контроль бюджета</string>
+    <string name="title_recorder">Запись</string>
+    <string name="title_chooser">Добавление книги</string>
+
+    <string name="recognizer_begin">Определение голоса</string>
+    <string name="recognizer_speech_detected">Речь распознана</string>
+    <string name="recognizer_speech_end">В ожидании</string>
+    <string name="recognizer_done">Распознавание окончено</string>
+    <string name="recognizer_part">Частично распознано:</string>
+    <string name="recognizer_canseled">Отменено</string>
+    <string name="recognizer_offline">Запись приостановлена</string>
+
+    <string name="recognizer_error">Ошибка:</string>
+    <string name="recorder_save">Сохранить</string>
+    <string name="recorder_clear">Очистить</string>
+    <string name="recorder_title_status">Статус</string>
+    <string name="recorder_title_edit">Контент</string>
+
+    <string name="dialog_recorder">Выберите заголовок</string>
+    <string name="dialog_choose">Выбрать</string>
+    <string name="dialog_cansel">Отмена</string>
+    <string name="dialog_recorder_saver_hint">Мастер и …</string>
+    <string name="dialog_recorder_file">Открыть файл?</string>
+    <string name="dialog_yes">Да</string>
+    <string name="dialog_no">Нет</string>
+    <string name="dialog_recorder_error_writer">Не удалось записать данные в файл</string>
+    <string name="dialog_recorder_error_creation">Не удалось создать файл</string>
+    <string name="dialog_error">Ошибка</string>
+    <string name="dialog_budget_remove">Удалить</string>
+    <string name="dialog_budget_remove_message">Вы действительно хотите удалить данную заметку?</string>
+    <string name="dialog_budget_add">Добавить заметку</string>
+    <string name="dialog_budget_add_message">Заполните все поля, чтобы добавить новую заметку</string>
+    <string name="dialog_library_remove_message">Вы действительно хотите удалить выбранную книгу?</string>
+    <string name="dialog_chooser_file">Выберите файл для загрузки</string>
+    <string name="dialog_chooser_image">Выберите постер</string>
+
+    <string name="budget_title">Бюджет</string>
+    <string name="budget_val">- руб.</string>
+    <string name="budget_button_plus">Прибавить к бюджету</string>
+    <string name="budget_button_minus">Вычесть из бюджета</string>
+    <string name="budget_dialog_invalid_count">Введите корректные данные</string>
+    <string name="budget_edit_hint">0.0 - руб.</string>
+    <string name="budget_title_notes">Заметки</string>
+    <string name="budget_emptyview">Ничего не найдено</string>
+    <string name="budget_loadmore">Загрузить ещё</string>
+    <string name="budget_val_caps">RUB</string>
+    <string name="budget_dialog_removed">Заметка была удалена</string>
+
+    <string name="note_top_edit_text">На что</string>
+    <string name="note_cost_edit_text">Цена</string>
+    <string name="note_text_edit_text">Заметка</string>
+
+    <string name="library_dialog_removed">Книга была успешно удалена</string>
+    <string name="library_title">Опубликованные книги</string>
+    <string name="library_poster">Постер книги</string>
+    <string name="library_dialog_update">Обновите страницу</string>
+    <string name="library_options">Опции книги</string>
+
+    <string name="chooser_no_file_manager">Файловый менеджер не найден. \r\n Установите сначала Проводник.</string>
+    <string name="chooser_error">Что-то пошло не так</string>
+    <string name="chooser_image">Изображение</string>
+    <string name="chooser_image_chooser">Выбрать</string>
+    <string name="chooser_title">Название</string>
+    <string name="chooser_description">Описание</string>
+    <string name="chooser_poster">Обложка</string>
+    <string name="chooser_error_image">Не удалось загрузить постер</string>
+
+</resources>

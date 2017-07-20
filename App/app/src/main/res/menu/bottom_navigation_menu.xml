@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/nav_books"
+        android:icon="@mipmap/ic_books"
+        android:title="@string/nav_books"/>
+    <item
+        android:id="@id/nav_recorder"
+        android:icon="@mipmap/ic_recorder"
+        android:title="@string/nav_recorder" />
+    <item
+        android:id="@id/nav_budget"
+        android:icon="@mipmap/ic_budget"
+        android:title="@string/nav_budget"/>
+</menu>

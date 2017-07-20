@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.idaspin.helperforbulgakov.activities_old.budget.BudgetActivity">
+    <TextView
+        android:id="@+id/text_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бюджет"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/budget_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- руб."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_budget"/>
+    <EditText
+        android:id="@+id/budget_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/budget_text_view"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:id="@+id/buttons_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budget_edit_text">
+
+        <ImageButton
+            android:id="@+id/plus_budget_image_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:background="@color/colorTransparent"
+            android:cropToPadding="false"
+            android:src="@mipmap/ic_plus_budget" />
+
+        <ImageButton
+            android:id="@+id/minus_budget_image_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@color/colorTransparent"
+            android:src="@mipmap/ic_minus_budget"
+            android:layout_gravity="end"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/note_add_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/buttons_linear_layout">
+        <LinearLayout
+            android:id="@+id/add_note_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/note_top_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="На что"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/note_cost_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Цена"
+                android:inputType="numberDecimal"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/note_text_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Заметка"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/note_agree_image_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/old_ic_agree_button"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparent"/>
+                <ImageButton
+                    android:id="@+id/note_cancel_image_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/old_ic_cancel_button"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/notes_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_add_frame">
+        <ru.idaspin.helperforbulgakov.widgets.EmptyRecyclerView
+            android:id="@+id/list_notes_Recycle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:isScrollContainer="true" />
+    </FrameLayout>
+
+
+</RelativeLayout>

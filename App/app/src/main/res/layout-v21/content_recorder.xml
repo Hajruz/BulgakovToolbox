@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.recorder.RecorderActivity"
+    android:id="@id/container_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:elevation="4dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="@string/recorder_title_status"/>
+
+        <TextView
+            android:id="@id/recorder_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/colorLightBlack"
+            android:text="@string/recognizer_offline"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="@string/recorder_title_edit"/>
+
+        <EditText
+            android:id="@id/recorder_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:background="@color/colorTransparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
